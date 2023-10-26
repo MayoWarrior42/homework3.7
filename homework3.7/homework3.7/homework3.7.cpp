@@ -1,4 +1,4 @@
-﻿#define MODE 1
+﻿#define MODE 3
 
 #ifdef MODE
 #if MODE == 0
@@ -27,9 +27,13 @@ int main() {
 }
 
 #else
-#error "Неизвестный режим. Завершение работы"
+#include <iostream>
+int main(){
+    system("chcp 1251");
+std::cout << "\nНеизвестный режим. Завершение работы";
+std::cout << "\nНеобходимо определить MODE";
+}
 #endif
 
-#else
-#error "Необходимо определить MODE"
+
 #endif
