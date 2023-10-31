@@ -1,4 +1,10 @@
-﻿#define MODE 3
+﻿#define MODE 1
+
+
+#ifndef MODE
+#error "Константа MODE не определена"
+#endif
+
 
 #ifdef MODE
 #if MODE == 0
